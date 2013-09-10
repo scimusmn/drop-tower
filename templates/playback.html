@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="col-lg-9">
+  <video id="my-video" src="static/media/GOPR0042.MP4"></video>
+
+  <script type="text/javascript">
+    /* play video twice as fast */
+    document.getElementById("my-video").defaultPlaybackRate = 2.0;
+    document.getElementById("my-video").play();
+
+    document.getElementById("my-video").playbackRate = 0.05;
+  </script>
+</div>
+<div class="col-lg-3">
+  <p><a href="{{ url_for('capture') }}">Start a new Go Pro capture</a></p>
+  <p>Video is currently playing at 0.05 or normal.</p>
+  <p>Originally recorded at 240 fps</p>
+  <p>This is where the controls will go.</p>
+</div>
+{% endblock %}
