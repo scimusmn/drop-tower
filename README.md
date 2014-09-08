@@ -1,7 +1,7 @@
 Drop Tower
 ==========
 
-## This project is depricated
+## This project is deprecated
 
 Go Pro acquisition and video player with speed playback control
 
