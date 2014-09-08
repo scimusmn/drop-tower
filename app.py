@@ -1,11 +1,16 @@
 from flask import Flask
 from flask import render_template
+from time import sleep
+#import gopro.camera
+#from gopro.camera import (mode_video, CAPTURE_LIST, capture_start,
+                          #capture_stop, get_captures)
+import urllib2
 app = Flask(__name__)
 
 
-@app.route('/')
+@app.route('/playback')
 def base():
-    return render_template('capture.html')
+    return render_template('playback.html')
 
 
 @app.route('/capture')
